@@ -2,8 +2,8 @@ terraform {
   required_version = "~> 1.0"
 
   backend "s3" {
-    bucket         = "tf-state-20240103075457355800000001"
-    dynamodb_table = "tf-lock"
+    bucket         = ""
+    dynamodb_table = ""
     key            = "terraform-state-additional.tfstate"
     region         = "us-east-1"
   }
